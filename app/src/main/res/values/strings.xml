@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sunshine</string>
+
+    <string name="action_settings">Settings</string>
+    <!-- Etiqueta para actualizar el tiempo -->
+    <string name="action_refresh" translatable="false" >Refresh</string>
+    <string name="action_map" translatable="false" >Map</string>
+    <string name="action_share" translatable="false" >Share</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="API_KEY" translatable="false">42c1398d8ce286989b164a0bc99f1183</string>
+    <string name="title_activity_detail">Detail</string>
+    <string name="title_activity_settings">Settings </string>
+
+    <!-- settings -->
+    <string name="settings_label">Settings</string>
+    <!-- Location -->
+    <string name="pref_location_key" translatable="false">location</string>
+    <string name="pref_location_label">Location</string>
+    <string name="pref_location_default" translatable="false">09002,es</string>
+
+    <!-- Unidaddes -->
+    <string name="pref_units_key" translatable="false">units</string>
+    <string name="pref_units_label">Temperature</string>
+    <string name="pref_units_celsius_label">Celsius</string>
+    <string name="pref_units_farenheit_label">Fahrenheit</string>
+    <string name="pref_units_celsius" translatable="false">celsius</string>
+    <string name="pref_units_farenheit" translatable="false">fahrenheit</string>
+
+
+</resources>

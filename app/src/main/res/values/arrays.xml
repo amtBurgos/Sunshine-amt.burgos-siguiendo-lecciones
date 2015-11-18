@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tiempo_p1">
+        <item>Hoy - Soleado 25/12</item>
+        <item>Mañana - Nublado 25/12</item>
+        <item>Miércoles - Soleado 20/10</item>
+        <item>Jueves - Soleado 18/14</item>
+        <item>Viernes - Asteroides 21/13</item>
+        <item>Sábado - Niebla 22/07</item>
+        <item>Domingo - Lluvia 17/07</item>
+        <item>Hoy - Soleado 25/12</item>
+        <item>Mañana - Nublado 25/12</item>
+        <item>Miércoles - Soleado 20/10</item>
+        <item>Jueves - Soleado 18/14</item>
+        <item>Viernes - Asteroides 21/13</item>
+        <item>Sábado - Niebla 22/07</item>
+        <item>Domingo - Lluvia 17/07</item>
+    </string-array>
+
+    <string-array name="unidades">
+        <item>Celsius</item>
+        <item>Farenheit</item>
+    </string-array>
+    <string-array name="unidades_valores">
+        <item>@string/pref_units_celsius</item>
+        <item>@string/pref_units_farenheit</item>
+    </string-array>
+
+</resources>
