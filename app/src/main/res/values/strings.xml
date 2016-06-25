@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
     <string name="app_name">Sunshine</string>
 
@@ -27,8 +27,14 @@
     <string name="pref_units_label">Temperature</string>
     <string name="pref_units_celsius_label">Celsius</string>
     <string name="pref_units_farenheit_label">Fahrenheit</string>
-    <string name="pref_units_celsius" translatable="false">celsius</string>
-    <string name="pref_units_farenheit" translatable="false">fahrenheit</string>
+    <string name="pref_units_metric" translatable="false">celsius</string>
+    <string name="pref_units_imperial" translatable="false">fahrenheit</string>
 
+    <!-- Date label when displaying today's weather forecast [CHAR LIMIT=20] -->
+    <string name="today">Hoy</string>
+    <!-- Date label when displaying tomorrow's weather forecast [CHAR LIMIT=20] -->
+    <string name="tomorrow">Mañana</string>
+    <!-- Date format for displaying day of week and date (i.e. Mon Jun 1) [CHAR LIMIT=20] -->
+    <string name="format_full_friendly_date"><xliff:g id="day">%1$s</xliff:g>, <xliff:g id="date">%2$s</xliff:g></string>
 
 </resources>

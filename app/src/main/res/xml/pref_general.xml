@@ -16,7 +16,7 @@
         android:title="@string/pref_units_label"
         android:entries="@array/unidades"
         android:entryValues="@array/unidades_valores"
-        android:defaultValue="@string/pref_units_celsius"
+        android:defaultValue="@string/pref_units_metric"
         />
 
 </PreferenceScreen>

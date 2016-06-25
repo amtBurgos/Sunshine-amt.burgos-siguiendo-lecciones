@@ -70,16 +70,20 @@ public class DetailActivity extends ActionBarActivity {
             View rootView = inflater.inflate(R.layout.fragment_detail, container, false);
 
             //Control de nulos
-            if(intent !=null && intent.hasExtra(Intent.EXTRA_TEXT)){
-                mForecastStr = intent.getStringExtra(Intent.EXTRA_TEXT);
+            if (intent != null && intent.hasExtra(Intent.EXTRA_TEXT)) {
+                mForecastStr = intent.getDataString();
+            }
+
+            if (null != mForecastStr) {
                 ((TextView) rootView.findViewById(R.id.detail_text))
                         .setText(mForecastStr);
             }
+
             return rootView;
         }
 
         @Override
-        public void onCreateOptionsMenu(Menu menu, MenuInflater inflater){
+        public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
             inflater.inflate(R.menu.detailfragment, menu);
 
             MenuItem menuItem = menu.findItem(R.id.action_share);
@@ -87,15 +91,15 @@ public class DetailActivity extends ActionBarActivity {
             ShareActionProvider shareProvider =
                     (ShareActionProvider) MenuItemCompat.getActionProvider(menuItem);
 
-            if(shareProvider != null){
+            if (shareProvider != null) {
                 shareProvider.setShareIntent(createShareForecastIntent());
-            }else{
+            } else {
                 Log.d(LOG_TAG, "Share action provider is null?");
             }
 
         }
 
-        private Intent createShareForecastIntent(){
+        private Intent createShareForecastIntent() {
             //intent para compartir
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
             //ponemos una flag para que al volver a nuestra app
